@@ -1,0 +1,25 @@
+<div class="table-responsive">
+    <table class="table">
+      <thead class="table-light">
+        <tr>
+          <th>Id</th>
+          <th>Avatar</th>
+          <th>Email</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of userList?.data">
+          <td>{{user.id}}</td>
+          <td> <div><img class="img-30 height-10 rounded-circle"
+            [src]="user.avatar?
+                user.avatar:'https://reqres.in/img/faces/1-image.jpg'"
+                        alt=""></div></td>
+          <td>{{user.email}}</td>
+          <td>{{user.first_name}}</td>
+          <td>{{user.last_name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

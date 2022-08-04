@@ -1,0 +1,21 @@
+<div class="table-responsive">
+  <table class="table">
+    <thead class="table-light">
+      <tr>
+        <th width="8%">Id</th>
+        <th>Name</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of newUserList?.data">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.year}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
